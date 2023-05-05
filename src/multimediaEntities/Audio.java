@@ -2,22 +2,26 @@ package multimediaEntities;
 
 public class Audio extends MultimediaEntity implements Volume, Playable{
 
+	private int duration;
+	
 	public Audio(String title, int duration) {
 		super(title);
 		this.duration = duration;
+	
 	}
 	
-	int duration;
-	
-	int volume = 5;
+	int volume = 0;
 
+	
 	public void play() {
 		for (int i=0; i < duration; i++) {
-			System.out.println(this.title);
-			for(int j=0; j <= volume; j++) {
-				System.out.println("!");
+			System.out.print(title);
+			for(int j=0; j < volume; j++) {
+				System.out.print("!");
 			}
+			System.out.println();
 		}
+
 	}
 	
 	@Override

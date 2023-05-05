@@ -4,21 +4,43 @@ import java.util.Scanner;
 
 public class Main {
 
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		
 		
 		Scanner input = new Scanner(System.in);
+//		
+//		System.out.println("Choose a song and declare its duration: ");
+//		
+//		Audio elementOne = new Audio(input.nextLine(), input.nextInt());
+//		
+//		elementOne.volumeUp();
+//		elementOne.volumeUp();
+//		elementOne.volumeUp();
+//		
+//		elementOne.play();
 		
-		System.out.println("Choose a song and declare its duration: ");
+//		System.out.println("Choose a movie and declare its duration: ");
+//		
+//		Video elementTwo = new Video(input.nextLine(), input.nextInt());
+//		
+//		elementTwo.volumeUp();
+//		elementTwo.volumeUp();
+//		elementTwo.volumeUp();
+//		
+//		elementTwo.brightnessDown();
+//		
+//		elementTwo.play();
 		
-		Audio elementOne = new Audio(input.nextLine(), input.nextInt());
+		System.out.println("Choose a picture: ");
 		
-		elementOne.volumeUp();
-		elementOne.volumeUp();
-		elementOne.volumeUp();
-		elementOne.volumeUp();
+		Image elementThree = new Image(input.nextLine());
 		
-		elementOne.play();
+		elementThree.brightnessUp();
+		elementThree.brightnessUp();
+		elementThree.brightnessUp();
+		
+		elementThree.show();
+		
 		
 		input.close();
 	}
