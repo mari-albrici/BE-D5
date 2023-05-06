@@ -2,7 +2,7 @@ package multimediaEntities;
 
 public class Image extends MultimediaEntity implements Brightness, Showable{
 	
-	private int brightness;
+	protected int brightness;
 
 	public Image(String title) {
 		super(title);

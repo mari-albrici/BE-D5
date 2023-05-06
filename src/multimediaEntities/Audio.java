@@ -10,7 +10,7 @@ public class Audio extends MultimediaEntity implements Volume, Playable{
 	
 	}
 	
-	int volume = 0;
+	int volume = 3;
 
 	
 	public void play() {
