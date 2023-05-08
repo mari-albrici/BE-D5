@@ -36,6 +36,7 @@ public class Video extends MultimediaEntity implements Volume, Brightness, Playa
 		return this.volume--;
 	}
 	
+	
 	@Override
 	public int brightnessUp() {
 		return this.brightness++;
