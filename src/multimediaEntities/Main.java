@@ -494,6 +494,7 @@ public class Main {
 				
 				case 0: 
 					System.out.println("Thank you for using my Media Player! Have a nice rest of your day :)");
+					input.close();
 					break;
 					
 				default:
